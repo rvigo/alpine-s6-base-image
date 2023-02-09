@@ -21,6 +21,8 @@ ENV PS1="$(whoami)@$(hostname):$(pwd)\\$ " \
     HOME="/root" \
     TERM="xterm"
 
+WORKDIR /srv/run
+
 COPY root /
 
 ENTRYPOINT ["/init"]
